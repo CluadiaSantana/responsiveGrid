@@ -1,0 +1,82 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div span {
+  display: block;
+  color: white;
+}
+
+.gridfromat, .c-d-1, .c-d-2, .c-d-3, .c-d-4, .c-d-6, .c-d-8, .c-d-12 {
+  text-align: center;
+  float: left;
+  border: solid 0.5px darkred;
+  background-color: tomato;
+}
+
+.c-d-12 {
+  width: 100%;
+}
+
+.c-d-8 {
+  width: calc(100%/12*8);
+}
+
+.c-d-6 {
+  width: calc(100%/2);
+}
+
+.c-d-4 {
+  width: calc(100%/3);
+}
+
+.c-d-3 {
+  width: calc(100%/4);
+}
+
+.c-d-2 {
+  width: calc(100%/6);
+}
+
+.c-d-1 {
+  width: calc(100%/12);
+}
+
+@media screen and (max-width: 1008px) {
+  .c-t-8 {
+    width: calc(100%/12*8);
+  }
+
+  .c-t-8 {
+    width: calc(100%/2);
+  }
+
+  .c-t-4 {
+    width: calc(100%/3);
+  }
+
+  .c-t-2 {
+    width: calc(100%/6);
+  }
+}
+@media screen and (max-width: 641px) {
+  .c-m-12 {
+    width: 100%;
+  }
+
+  .c-m-8 {
+    width: calc(100%/12*8);
+  }
+
+  .c-m-6 {
+    width: calc(100%/2);
+  }
+
+  .c-m-4 {
+    width: calc(100%/3);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

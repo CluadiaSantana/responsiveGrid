@@ -1,0 +1,87 @@
+@import 'variables';
+@import 'partial';
+
+@mixin tablet{
+    @media screen and (max-width: 1008px){
+        @content;
+    }
+}
+@mixin movile{
+    @media screen and (max-width: 641px){
+        @content;
+    }
+}
+
+.gridfromat {
+    text-align: center;
+    float: left;
+    border: solid 0.5px $contrast-color;
+    background-color: $primary-color;
+}
+
+.c-d-12 {
+    @extend .gridfromat;
+    width: 100%;
+}
+
+.c-d-8 {
+    @extend .gridfromat;
+    width: CALC(100%/12*8);
+}
+
+.c-d-6 {
+    @extend .gridfromat;
+    width: CALC(100%/2);
+}
+
+.c-d-4 {
+    @extend .gridfromat;
+    width: CALC(100%/3);
+}
+
+.c-d-3 {
+    @extend .gridfromat;
+    width: CALC(100%/4);
+}
+
+.c-d-2 {
+    @extend .gridfromat;
+    width: CALC(100%/6);
+}
+
+.c-d-1 {
+    @extend .gridfromat;
+    width: CALC(100%/12);
+}
+
+
+
+@include tablet{
+    .c-t-8 {
+        width: CALC(100%/12*8);
+    }
+    .c-t-8{
+        width: CALC(100%/2);
+    }
+    .c-t-4{
+        width: CALC(100%/3);
+    }
+    .c-t-2{
+        width: CALC(100%/6);
+    }
+}
+
+@include movile{
+    .c-m-12{
+        width: 100%;
+    }
+    .c-m-8{
+        width: CALC(100%/12*8);
+    }
+    .c-m-6{
+        width: CALC(100%/2);
+    }
+    .c-m-4{
+        width: CALC(100%/3);
+    }
+}

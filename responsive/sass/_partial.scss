@@ -1,0 +1,13 @@
+@import 'variables';
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div span {
+    display: block;
+    color: $interntext;
+}
